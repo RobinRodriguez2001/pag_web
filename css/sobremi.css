@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+
+
+.contact-main-container {
+  width: 100%;
+  min-height: 200px;
+  background: #e6e9ed;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'contact-left contact-right';
+}
+.contact-main-container div {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+}
+.contact-main-container div a {
+  border-bottom: 1px solid black;
+  font-weight: 700;
+  font-size: 18px;
+}
+.contact-left {
+  /* display: grid; */
+  grid-area: contact-left;
+  margin-left: 20%;
+}
+.contact-right {
+  grid-area: contact-right;
+}
+.grid-container-contacto {
+  max-width: 980px;
+  margin: auto;
+  text-align: start;
+}
+.contact-main-container .contact-left,
+.contact-right {
+  margin-top: 45px;
+}
+.contact-main-container .contact-left,
+.contact-right p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.contact-main-container img {
+  width: 100px;
+}
+.left,
+.right {
+  text-align: left;
+}
+.profile-main-container {
+  padding: 70px 40px;
+  background-color: #e6e9ed;
+  margin-bottom: 50px;
+}
+.profile-main-container img {
+  width: 320px;
+  margin-right: 30px;
+}
+.profile-main-container p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+.profile-main-container .profile-container {
+  display: flex;
+}
+.profile-main-container .profile-container h2 {
+  font-size: 35px;
+  margin: 15px 0;
+}
+.profile-main-proyects {
+  padding: 0 50px 40px;
+}

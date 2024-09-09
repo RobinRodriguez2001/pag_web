@@ -1,0 +1,101 @@
+body {
+    background: url('../blog/Cover.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw; /* Asegura que el fondo cubra toda la vista */
+    height: 100vh; /* Asegura que el fondo cubra toda la vista */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 12px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.wrapper h2 {
+    font-size: 30px;
+    color: #fffefe;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field input[type="email"],
+.input-field input[type="password"] {
+    border-radius: 10px;
+    background: transparent;
+    margin: 15px 0;
+    border: 2px solid rgb(255, 255, 255);
+    width: 100%; /* Ajusta al ancho del contenedor */
+    padding: 20px;
+    backdrop-filter: blur(15px);
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: rgb(252, 252, 252);
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.input-field input[type="email"]:focus::placeholder,
+.input-field input[type="password"]:focus::placeholder {
+    transform: translateY(-100%);
+    transition: transform 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+.input-field input[type="email"]:not(:focus)::placeholder,
+.input-field input[type="password"]:not(:focus)::placeholder {
+    transform: translateY(0%);
+    transition: transform 0.2s ease-in-out;
+    font-size: 16px;
+}
+
+a.forgot {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.712);
+}
+
+a.forgot:hover {
+    text-decoration: underline;
+    color: #fffffffd;
+}
+
+a.sign-up { /* Corregido de sing-up a sign-up */
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.712);
+}
+
+a.sign-up:hover { /* Corregido de sing-up a sign-up */
+    text-decoration: underline;
+    color: #fffffffd;
+}
+
+.wrapper .login {
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 45px;
+    width: 200px;
+    height: 30px;
+}

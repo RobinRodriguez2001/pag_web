@@ -1,0 +1,82 @@
+/* Estilo general para las tarjetas */
+.general-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+}
+
+.general-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transform: scale(1.02);
+}
+
+/* Estilo de imagen en la parte superior de la tarjeta */
+.general-card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Contenido de la tarjeta */
+.general-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px;
+}
+
+/* Margen para título y párrafos */
+.general-card-title, .general-card p {
+  margin: 0;
+}
+
+/* Logo en la página */
+.general-logoweb {
+  max-width: 150px; /* Tamaño máximo ancho */
+  height: auto;     /* Mantiene la proporción del logo */
+  display: block;   /* Asegura que la imagen sea un bloque */
+}
+
+/* Estilos para la tarjeta grande */
+.large-card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.large-card .large-card-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para la tarjeta pequeña */
+.small-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.small-card .small-card-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilo para los videos en tarjetas grandes */
+.large-card-video {
+  width: 100%;
+  height: auto; /* Mantiene la proporción del video */
+}
+
+/* Estilo para los videos en tarjetas pequeñas */
+.small-card-video {
+  width: 100%;
+  height: auto; /* Mantiene la proporción del video */
+}
+
+/* Resto del CSS sigue igual */
